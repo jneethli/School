@@ -1,0 +1,136 @@
+/* Color Palette */
+:root {
+    --green: #2e7d32;
+    --brown: #5d4037;
+    --yellow: #fbc02d;
+    --black: #111;
+    --light: #f5f5f5;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light);
+    color: var(--black);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--green);
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background: var(--brown);
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: var(--yellow);
+    color: black;
+}
+
+/* Hero */
+.hero {
+    padding: 20px;
+}
+
+.hero-box {
+    background: var(--yellow);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* Layout */
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Left Content */
+.left {
+    flex: 3;
+}
+
+.card {
+    background: white;
+    border-left: 6px solid var(--green);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Right Sidebar */
+.right {
+    flex: 1;
+    background: var(--brown);
+    color: white;
+    padding: 15px;
+}
+
+.right ul {
+    list-style: none;
+    padding: 0;
+}
+
+.right li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* Placeholders */
+.image-placeholder {
+    background: #ccc;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.image-placeholder.small {
+    height: 80px;
+    margin-top: 10px;
+}
+
+.video-placeholder {
+    background: black;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: var(--green);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
