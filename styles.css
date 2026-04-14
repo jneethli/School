@@ -1,4 +1,4 @@
-/* Color Palette */
+
 :root {
     --green: #2e7d32;
     --brown: #5d4037;
@@ -50,6 +50,12 @@ nav a {
 }
 
 nav a:hover {
+    background: var(--yellow);
+    color: black;
+}
+
+/* Highlight Active Tab */
+nav a.active {
     background: var(--yellow);
     color: black;
 }
