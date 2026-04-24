@@ -29,18 +29,50 @@
         <div class="card">
             <h3>Contact Us</h3>
             <p>Email: coach@chessemporium.com</p>
+            <p>
+            <a href="mailto:jneethli@asu.edu">Email Me</a>
+            </p>
             <p>Phone: (123) 456-7890</p>
         </div>
 
         <div class="card">
             <h3>Send a Message</h3>
-            <p>(Form coming soon)</p>
+            <form id="contactForm" action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="phone" id="phone" name="phone" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+            </form>
+
+<p id="responseMessage" style="color: green;"></p>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("responseMessage").textContent =
+      "Your message has been submitted! (Demo only)";
+
+    this.reset();
+  });
+</script>
         </div>
     </div>
 
     <aside class="right">
         <h3>Location</h3>
-        <p>Phoenix, Arizona</p>
+        <p>1835 E Elliot Rd, Tempe, AZ 85284</p>
+        <h3>Location</h3>
+        <p>7000 E Shea Blvd E-120, Scottsdale, AZ 85254</p>
     </aside>
 </main>
 
